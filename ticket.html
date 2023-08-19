@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ticket</title>
+    <!-- family font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Animates -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="module" crossorigin src="/cut-class-week7/assets/ticket-378051c3.js"></script>
+    <link rel="modulepreload" crossorigin href="/cut-class-week7/assets/header-726c893b.js">
+    <link rel="stylesheet" href="/cut-class-week7/assets/header-8e23e4ba.css">
+  </head>
+  <body>
+    <div class="header position-fixed start-50 top-0 translate-middle-x z-3 py-3 py-lg-6 border-bottom border-3 border-primary w-100">
+    <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="d-lg-flex align-items-lg-center me-lg-12">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo pic" class="logo me-lg-4">
+            <p class="d-none fs-9 d-lg-flex align-items-lg-center">7TAO <span class="fs-13 fw-bold ms-lg-1">活動訂票網</span></p>
+        </a>
+        <div class="input-group">
+            <input type="text" class="form-control border-primary border-2 py-2 ps-3 py-lg-4 ps-lg-6" placeholder="探索活動" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text border-primary border-2 bg-primary text-secondary icofont-search-1" id="basic-addon1"></span>
+        </div>
+        <button type="button" class="icofont-dart icofont-navigation-menu d-md-none btn px-3 py-1 border border-primary rounded-1"></button>
+        <div class="d-none d-md-flex ms-md-auto">
+            <a href="#">
+                <span class="icofont-ui-file"></span>
+                REGISTER
+            </a>
+            <a href="login.html" class="ms-lg-6">
+                <span class="icofont-ui-user"></span>
+                LOGIN
+            </a>
+        </div>
+    </div>
+    <div class="collapse-customer d-none d-md-none position-fixed w-100 border-bottom border-3 border-primary ">
+        <div class="container">
+            <a href="#" class="pb-2 pt-6">
+                <span class="icofont-ui-file"></span>
+                REGISTER
+            </a>
+            <a href="login.html" class="pt-2 pb-6">
+                <span class="icofont-ui-user"></span>
+                LOGIN
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="exhibition position-relative">
+      <div class="ticket pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 mb-2 mb-lg-0">
+              <div class="banner p-3 p-lg-6 border border-3 border-primary">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true" alt="student pic" class="w-100">
+              </div>
+            </div>
+            <div class="col-12 col-lg-2">
+              <div class="row flex-lg-column justify-content-lg-between h-100">
+                <div class="col-4 col-lg-12">
+                  <h2 class="border border-3 border-primary fs-11 fs-lg-5 py-lg-8 h-100 d-flex align-items-center justify-content-center">2023</h2>
+                </div>
+                <div class="col-8 col-lg-12">
+                  <div class="date border border-3 border-primary d-flex flex-lg-column justify-content-between justify-content-md-around justify-content-lg-between align-items-center px-6 px-lg-0 py-3 py-lg-12 position-relative">
+                    <h2 class="fs-16 fs-lg-5 text-center">MAY <br>19</h2>
+                    <div class="time">
+                      <p class="fs-lg-9 lh-1 text-center">12:00</p>
+                      <p class="fs-lg-9 lh-1 text-center">|</p>
+                      <p class="fs-lg-9 lh-1 text-center">20:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="fs-9 fs-lg-2 fw-bold mt-6 mb-2 mb-lg-4">返老還童-制服聯誼</h1>
+          <p class="fs-lg-16 mb-6">
+            穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！
+          </p>
+          <div class="btn-group d-none d-lg-inline-flex mb-lg-12" role="group" aria-label="Basic example">
+            <button type="button" class="btn border-primary fw-bold me-2">聯誼</button>
+            <button type="button" class="btn border-primary fw-bold me-2">美食</button>
+            <button type="button" class="btn border-primary fw-bold me-2">戶外</button>
+            <button type="button" class="btn border-primary fw-bold">交通旅遊</button>
+          </div>
+          <div class="content p-4 p-lg-8 border border-2 border-primary mb-6 mb-lg-12">
+            <p class="mb-4">想回到過去？試著讓故事繼續？</p>
+            <p class="mb-4">由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！</p>
+            <p>活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶&lt;3</p>
+          </div>
+          <h2 class="fs-11 fs-lg-1 py-4 py-lg-6 px-3 px-lg-8 mb-2 mb-lg-4 border border-2 border-primary d-flex justify-content-between align-items-center">TICKET<span class="fw-bold fs-13 fs-lg-9">購票資訊</span></h2>
+          <table class="table mb-12 mb-lg-15">
+            <thead>
+              <tr>
+                <th scope="col" class="fw-bold border-primary">活動日期</th>
+                <th scope="col" class="fw-bold border-primary">票種</th>
+                <th scope="col" class="fw-bold border-primary">票價</th>
+                <th scope="col" class="fw-bold border-primary text-center">購票</th>
+              </tr>
+            </thead>
+            <tbody class="fs-14 fs-lg-13">
+              <tr>
+                <td class="border-primary lh">2023/5/12</td>
+                <td class="border-primary lh">普通票</td>
+                <td class="border-primary lh">$600</td>
+                <td class="border-primary">
+                  <button class="btn fw-bold p-2 border border-primary my-2 d-block mx-auto d-lg-none buy">購票</button>
+                  <button class="btn fw-bold py-2 px-6 border border-primary my-2 d-none d-lg-block ms-auto buy">立即購票</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border-primary lh">2023/5/12</td>
+                <td class="border-primary lh">改頭換面票（含大改造）</td>
+                <td class="border-primary lh">$3600</td>
+                <td class="border-primary">
+                  <button class="btn fw-bold p-2 border border-primary my-2 d-block mx-auto d-lg-none buy">購票</button>
+                  <button class="btn fw-bold py-2 px-6 border border-primary my-2 d-none d-lg-block ms-auto buy">立即購票</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="border-primary lh">2023/5/12</td>
+                <td class="border-primary lh">必勝票（含戀愛小抄）</td>
+                <td class="border-primary lh">$8000</td>
+                <td class="border-primary">
+                  <button class="btn fw-bold p-2 border border-primary my-2 d-block mx-auto d-lg-none buy">購票</button>
+                  <button class="btn fw-bold py-2 px-6 border border-primary my-2 d-none d-lg-block ms-auto buy">立即購票</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="check pt-3 pt-lg-15 d-none">
+        <div class="container">
+          <div class="row flex-column align-items-center mb-6 mb-lg-12">
+            <div class="orderPage d-none col-12 col-lg-6 mb-1 mb-lg-2">
+              <div class="d-flex justify-content-between px-4 position-relative" role="group" aria-label="Basic example">
+                <button type="button" class="btn orderPageStep1 border-primary fake1 active">1</button>
+                <button type="button" class="btn orderPageStep2 border-primary fake2">2</button>
+                <button type="button" class="btn orderPageStep3 border-primary">3</button>
+              </div>
+            </div>
+            <div class="orderPage d-none col-12 col-lg-6">
+              <div class="stepSchedule d-flex justify-content-between">
+                <p class="fw-bold">訂單確認</p>
+                <p class="fw-bold">結帳付款</p>
+                <p class="fw-bold">訂單結果</p>
+              </div>
+            </div>
+          </div>
+          <div class="row flex-column align-items-center">
+            <div class="col-12 col-lg-6 d-none orderTitle">
+              <h1 class="fw-bold fs-5 mb-6 mb-lg-8 text-lg-center">返老還童-制服聯誼</h1>
+            </div>
+            <div class="step1 d-none col-12 col-lg-6">
+              <table class="table mb-8 mb-lg-12">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-primary fw-bold">日期</td>
+                    <td class="border-primary text-end">2023/5/12</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">票種</td>
+                    <td class="border-primary text-end">改頭換面票（含大改造）</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">票價</td>
+                    <td class="border-primary text-end">$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="step1 d-none col-12 col-lg-6">
+              <img class="d-block mx-auto mb-4" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="logo pic">
+              <h2 class="fs-11 fw-bold text-center mb-4">聯絡人資料</h2>
+            </div>
+            <div class="step1 d-none col-12 col-lg-6">
+              <form action="ticket.html">
+                <div class="mb-4">
+                  <label for="name" class="form-label mb-2">聯絡人姓名</label>
+                  <input type="text" name="name" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="name" aria-describedby="nameHelp" placeholder="請輸入聯絡人名稱">
+                </div>
+                <div class="mb-4">
+                  <label for="mail" class="form-label mb-2">Email</label>
+                  <input type="email" name="mail" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="mail" aria-describedby="emailHelp" placeholder="請輸入Email">
+                </div>
+                <div class="mb-6 mb-lg-8">
+                  <label for="phone" class="form-label mb-2">手機</label>
+                  <input type="tel" name="tel" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="phone" placeholder="請輸入手機號碼">
+                </div>
+                <button type="submit" class="btn btn-primary py-2 step1Submit d-block w-100 mb-2 mx-lg-auto">確認表單資料 <span class="icofont-rounded-double-right"></span></button>
+                <button type="button" class="btn cancel fs-15 py-2 d-block w-100 mx-lg-auto">取消購票</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="login pt-6 pt-lg-15 d-none position-relative">
+    <div class="container">
+        <div class="row flex-lg-column align-items-center">
+            <div class="col-12 col-lg-4">
+                <img class="d-block mx-auto mb-4" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="logo pic">
+                <h2 class="fs-11 fw-bold text-center mb-4">會員登入</h2>
+            </div>
+            <div class="col-12 col-lg-4">
+                <form action="index.html">
+                    <div class="mb-4">
+                      <label for="account" class="form-label mb-2">帳號</label>
+                      <input type="text" name="account" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="account" aria-describedby="accountHelp" placeholder="請輸入帳號">
+                    </div>
+                    <div class="mb-4">
+                        <label for="code" class="form-label mb-2">密碼</label>
+                        <input type="text" name="code" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="code" aria-describedby="codeHelp" placeholder="請輸入密碼">
+                    </div>
+                    <button type="submit" class="btn btn-primary py-2 submitEjs d-block w-100 mb-2 mx-lg-auto">登入 <span class="icofont-rounded-double-right"></span></button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
+          <div class="row flex-column align-items-center">
+            <div class="step2 d-none col-12 col-lg-6">
+              <p class="bg-primary text-secondary text-center p-2 p-lg-3 mb-6 mb-lg-8">
+                您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
+              </p>
+            </div>
+            <div class="step2 d-none col-12 col-lg-6">
+              <table class="table mb-8 mb-lg-12">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-primary fw-bold">訂單編號</td>
+                    <td class="border-primary text-end">892746123</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">票券</td>
+                    <td class="border-primary text-end">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="step2 d-none col-12 col-lg-6">
+              <img class="d-block mx-auto mb-4" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="logo pic">
+              <h2 class="fs-11 fw-bold text-center mb-4">聯絡人資料</h2>
+            </div>
+            <div class="step2 d-none col-12 col-lg-6">
+              <form action="ticket.html">
+                <div class="mb-4">
+                  <label for="ID" class="form-label mb-2">取票資訊</label>
+                  <input type="name" name="ID" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="ID" aria-describedby="nameHelp" placeholder="請輸入身分證字號或護照號碼">
+                  <div class="form-text fs-14 fs-lg-13">
+                    請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-danger">護照號碼</span>
+                  </div>
+                </div>
+                <div class="mb-6 mb-lg-8">
+                  <p class="mb-2">付款方式</p>
+                  <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="payment" id="credit">
+                    <label class="form-check-label" for="credit">
+                      信用卡
+                    </label>
+                  </div>
+                  <div class="form-check mb-6 mb-lg-8">
+                    <input class="form-check-input" type="radio" name="payment" id="atm" checked>
+                    <label class="form-check-label" for="atm">
+                      ATM虛擬帳號
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary py-2 step2Submit d-block w-100 mb-2 mx-lg-auto">確認訂單並繳費 $8000 <span class="icofont-rounded-double-right"></span></button>
+              </form>
+            </div>
+          </div>
+          <div class="row flex-column align-items-center">
+            <div class="step3 d-none col-12 col-lg-6">
+              <p class="icofont-check-circled icofont-3x d-block text-center mb-4"></p>
+              <h2 class="fs-11 fw-bold text-center mb-8">訂購成功</h2>
+            </div>
+            <div class="step3 d-none col-12 col-lg-6">
+              <table class="table mb-4">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-primary fw-bold">訂單編號</td>
+                    <td class="border-primary text-end">892746123</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">訂購時間</td>
+                    <td class="border-primary text-end">2023/04/28 14:30</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">票券</td>
+                    <td class="border-primary text-end">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">取票序號</td>
+                    <td class="border-primary text-end fw-bold text-danger">95G54J4434</td>
+                  </tr>
+                  <tr>
+                    <td class="border-primary fw-bold">取票號碼</td>
+                    <td class="border-primary text-end fw-bold text-danger">04597101</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="step3 d-none col-12 col-lg-6">
+              <p class="mb-12 mb-lg-15">
+                請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>若需退票，請按照退票辦法進行申請。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer fs-14 fs-md-13 py-6 py-md-8 border-top border-3 border-primary">
+    <div class="container">
+        <p class="text-center">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</div>    </div>
+    
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- own js -->
+    
+    
+  </body>
+</html>

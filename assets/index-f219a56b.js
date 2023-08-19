@@ -1,0 +1,1 @@
+import"./header-726c893b.js";$(document).ready(function(){new Swiper(".swiper",{direction:"horizontal",speed:3e3,loop:!0,slidesPerView:"auto",allowTouchMove:!1,spaceBetween:0,autoplay:{delay:0,disableOnInteraction:!1},effect:"slide",pagination:{el:".swiper-pagination",clickable:!1}})});
