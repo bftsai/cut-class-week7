@@ -1,0 +1,29 @@
+@mixin normal{
+    @media (max-width: 1320px) {
+        @content
+    }
+}
+
+@mixin width768{
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin width375{
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin iphone12{
+    @media (max-width: 390px) {
+        @content
+    }
+}
+
+@mixin iphone6{
+    @media (max-width: 375px) {
+        @content
+    }
+}

@@ -1,0 +1,24 @@
+//bootstrap
+// Configuration
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../scss/utils/utilities";
+
+//loadind all bootstrap
+// Layout & components
+@import "../../node_modules/bootstrap/";
+
+//own breakpoit
+@import "./base/base.scss";
+@import "./base/breakpoint";
+
+
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
