@@ -94,6 +94,18 @@
         transition-timing-function: linear;
     }
     .activity{
+        @keyframes rotate0deg {
+            from{transform: rotate(-4deg);}
+            to{transform: rotate(0deg);}
+        }
+        @keyframes rotate2deg {
+            from{transform: rotate(-2deg);}
+            to{transform: rotate(2deg);}
+        }
+        @keyframes rotate-2deg {
+            from{transform: rotate(2deg);}
+            to{transform: rotate(-2deg);}
+        }
         img{
             height: 267px;
             object-fit: cover;
@@ -107,10 +119,24 @@
             }
         }
         li:nth-child(even){
-            transform: rotate(-2deg);
+            //transform: rotate(-2deg);
+            animation-name: rotate-2deg;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3000000;
         }
         li:nth-child(3){
-            transform: rotate(2deg);
+            //transform: rotate(2deg);
+            animation-name: rotate2deg;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3000000;
+        }
+        li:nth-child(1){
+            animation-name: rotate0deg;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3000000;
         }
     }
     .promote{

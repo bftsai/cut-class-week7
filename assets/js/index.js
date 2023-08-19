@@ -44,18 +44,13 @@ $(document).ready(function () {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
       
     });
+    //CSShake
     $('.icofont-rounded-double-right').parent().hover(function () {
             // over
             $('.icofont-rounded-double-right').parent().addClass('shake');
-            $('.icofont-rounded-double-right').addClass('shake');
         }, function () {
             // out
             $('.icofont-rounded-double-right').parent().removeClass('shake');
-            $('.icofont-rounded-double-right').removeClass('shake');
         }
     );
-    $(selector).click(function (e) { 
-        e.preventDefault();
-        
-    });
 });
