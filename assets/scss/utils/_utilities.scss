@@ -51,6 +51,7 @@ $utilities: map-merge(
     // scss-docs-end utils-opacity
     // scss-docs-start utils-overflow
     "overflow": (
+      responsive: true,
       property: overflow,
       values: auto hidden visible scroll,
     ),
@@ -94,28 +95,34 @@ $utilities: map-merge(
     // scss-docs-end utils-focus-ring
     // scss-docs-start utils-position
     "position": (
+      responsive: true,
       property: position,
       values: static relative absolute fixed sticky
     ),
     "top": (
+      responsive: true,
       property: top,
       values: $position-values
     ),
     "bottom": (
+      responsive: true,
       property: bottom,
       values: $position-values
     ),
     "start": (
+      responsive: true,
       property: left,
       class: start,
       values: $position-values
     ),
     "end": (
+      responsive: true,
       property: right,
       class: end,
       values: $position-values
     ),
     "translate-middle": (
+      responsive: true,
       property: transform,
       class: translate-middle,
       values: (
@@ -127,6 +134,7 @@ $utilities: map-merge(
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border": (
+      responsive: true,
       property: border,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -134,6 +142,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true,
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -141,6 +150,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true,
       property: border-right,
       class: border-end,
       values: (
@@ -149,6 +159,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true,
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -157,6 +168,7 @@ $utilities: map-merge(
     ),
     "border-start": (
       property: border-left,
+      responsive: true,
       class: border-start,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -505,6 +517,7 @@ $utilities: map-merge(
       values: (monospace: var(--#{$prefix}font-monospace))
     ),
     "font-size": (
+      responsive: true,
       rfs: true,
       property: font-size,
       class: fs,
@@ -536,6 +549,16 @@ $utilities: map-merge(
         sm: $line-height-sm,
         base: $line-height-base,
         lg: $line-height-lg,
+      )
+    ),
+    "letter-specing":(
+      responsive: true,
+      property: letter-spacing,
+      class: letter-spc,
+      values: (
+        0: 0,
+        5: 0.05em,
+        10: 0.1em, //意即letter-spacing: 10%
       )
     ),
     "text-align": (

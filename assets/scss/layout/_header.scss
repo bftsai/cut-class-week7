@@ -1,0 +1,32 @@
+.header{
+    background-color: #F3F1E5;
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .input-group{
+        width: 58.974359%;
+    }
+    .collapse-customer{
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: all 1s;
+        background-color: #F3F1E5;
+    }
+    .collapseToggle{
+        height: 115px;
+        transform: translateY(15px);
+        opacity: 1;
+    }
+}
+@include lg{
+    .header{
+        .logo{
+            width: 53px;
+            height: 53px;
+        }
+        .input-group{
+            width: 25.8488%;
+        }
+    }
+}

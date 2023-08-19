@@ -1,0 +1,195 @@
+.exhibition{
+    top: 71px;
+    .ticket,.orderPage,.orderTitle,.step1,.step2,.step3{
+        transition: all 1s;
+    }
+    .opacity{
+        display: block;
+        opacity: 0;
+        //transform: rotateY(180deg);
+    }
+    .flip{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+.ticket{
+    opacity: 1;
+    .banner{
+        img{
+            object-fit: cover;
+        }
+    }
+    .time::before{
+        position:absolute;
+        content: "/";
+        font-size: 55px;
+        line-height: 1;
+        top: 20%;
+        left: 45%;
+    }
+    .btn-group{
+        button{
+            border-width: 1px 1px 1px 4px;
+            &:hover{
+                border-width: 0px 0px 0px 4px;
+                background-color: $primary;
+                color: $secondary;
+                border-color: $secondary;
+            }
+        }
+    }
+    table{
+        font-family: 'Noto Serif TC';
+        th{
+            line-height: 40px;
+        }
+        .lh{
+            line-height: 55px;
+        }
+        button:hover{
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+}
+.check{
+    .orderPage{
+        button{
+            padding: 4px 11px;
+            background-color: #F3F1E5;
+            &:hover{
+                cursor: inherit;
+                border-color: $primary;
+            }
+        }
+        .active{
+            color: $secondary;
+            background-color: $primary;
+            border-color: $primary;
+        }
+        .fake1::after{
+            position: absolute;
+            content: "";
+            width: 39%;
+            border: 1px solid $primary;
+            left: 8%;
+            top: 50%;
+            z-index: -1;
+        }
+        .fake2::after{
+            position: absolute;
+            content: "";
+            width: 39%;
+            border: 1px solid $primary;
+            right: 8%;
+            top: 50%;
+            z-index: -1;
+        }
+    }
+    table{
+        font-family: 'Noto Serif TC';
+        th{
+            border-bottom: 2px solid $primary;
+        }
+        td{
+            line-height: 40px;
+        }
+        .text-danger{
+            color: rgb(220, 53, 69) !important;
+        }
+    }
+    img{
+        width: 32px;
+        height: 32px;
+    }
+    form{
+        margin-bottom: 40px;
+        button:hover{
+            color: $secondary;
+        }
+        .cancel{
+            color: #4F4F4F;
+            &:hover{
+                color: white;
+                font-weight: 700;
+                background-color: $danger;
+            }
+        }
+    }
+    .step2{
+        .form-check-label:hover,.form-check-input:hover{
+            cursor: pointer;
+        }
+    }
+    .step3{
+        p{
+            font-family: 'Noto Sans TC';
+        }
+    }
+}
+@include md{
+    .check{
+        .orderPage{
+            .fake1::after{
+                width: 42%;
+                left: 6%;
+            }
+            .fake2::after{
+                width: 42%;
+                right: 6%;
+            }
+        }
+    }
+}
+@include lg{
+    .exhibition{
+        top: 111px;
+    }
+    .ticket{
+        padding-top: 30px;
+        .banner{
+            height: 598px;
+            img{
+                height: 550px;
+            }
+        }
+        .date{
+            h2{
+                margin-bottom: 100px;
+            }
+        }
+        .time::before{
+            font-size: 86px;
+            left: 38%;
+            top: 44%;
+        }
+        .button{
+            border-width: 1px 1px 1px 4px;
+            &:hover{
+                
+            }
+        }
+        table{
+            th{
+                border-width: 0 0 3px 0;
+            }
+            .text-lg-end{
+                text-align: right;
+            }
+        }
+    }
+    .check{
+        .btn-group{
+            button{
+                padding: 12px 18px;
+            }
+        }
+        form{
+            margin-bottom: 54px;
+            .step1Submit,.step2Submit,.cancel{
+                width: 65.408805%;
+            }
+        }
+    }
+}

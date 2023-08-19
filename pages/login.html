@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ticket</title>
+    <!-- family font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Animates -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body>
+    
+    <%- include('./layout/header'); -%>
+    <div class="login pt-6 pt-lg-15 position-relative">
+        <div class="container">
+            <div class="row flex-lg-column align-items-center">
+                <div class="col-12 col-lg-4">
+                    <img class="d-block mx-auto mb-4" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="logo pic">
+                    <h2 class="fs-11 fw-bold text-center mb-4">會員登入</h2>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <form action="index.html">
+                        <div class="mb-4">
+                          <label for="account" class="form-label mb-2">帳號</label>
+                          <input type="text" name="account" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="account" aria-describedby="accountHelp" placeholder="請輸入帳號">
+                        </div>
+                        <div class="mb-4">
+                            <label for="code" class="form-label mb-2">密碼</label>
+                            <input type="text" name="code" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="code" aria-describedby="codeHelp" placeholder="請輸入密碼">
+                        </div>
+                        <button type="submit" class="btn btn-primary py-2 submitHtml d-block w-100 mb-2 mx-lg-auto">登入 <span class="icofont-rounded-double-right"></span></button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+    </div>
+    
+    <script type="module" src="../main.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="module" src="../assets/js/header.js"></script>
+  </body>
+</html>

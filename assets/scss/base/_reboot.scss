@@ -243,6 +243,7 @@ sup { top: -.5em; }
 a {
   color: rgba(var(--#{$prefix}link-color-rgb), var(--#{$prefix}link-opacity, 1));
   text-decoration: $link-decoration;
+  display: block;
 
   &:hover {
     --#{$prefix}link-color-rgb: var(--#{$prefix}link-hover-color-rgb);
@@ -334,6 +335,8 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  width: 100%; //customer
+  object-fit: cover; //customer
 }
 
 
@@ -471,7 +474,7 @@ button,
 // 1. Textareas should really only resize vertically so they don't break their (horizontal) containers.
 
 textarea {
-  resize: vertical; // 1
+  resize: none; //customer vertical; // 1
 }
 
 // 1. Browsers set a default `min-width: min-content;` on fieldsets,

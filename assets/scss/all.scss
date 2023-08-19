@@ -5,20 +5,32 @@
 @import "./helpers/variables-dark";
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
-@import "../scss/utils/utilities";
+@import "./utils/utilities";
 
 //loadind all bootstrap
 // Layout & components
 @import "../../node_modules/bootstrap/";
 
-//own breakpoit
+//customer bootstrap base
+@import "./base/root";
+@import "./base/reboot";
+
+//own base
 @import "./base/base.scss";
-@import "./base/breakpoint";
+@import "./base/breakpoin_customer";
 
-
+//animate.css
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+//aos animate
+@import url(https://unpkg.com/aos@next/dist/aos.css);
+//icofont
+@import "./utils/icofont/icofont.min.css";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './layout/login';
 
 
 @import './pages/index.scss';
+@import './pages/even';
+@import './pages/ticket';

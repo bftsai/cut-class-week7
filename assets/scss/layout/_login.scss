@@ -1,0 +1,18 @@
+.login{
+    top: 71px;
+    transition: all 1s;
+    .container{
+        padding-bottom: 264px;
+    }
+    button:hover{
+        color: $secondary;
+    }
+}
+@include lg{
+    .login{
+        top: 111px;
+        .container{
+            padding-bottom: 175px;
+        }
+    }
+}
