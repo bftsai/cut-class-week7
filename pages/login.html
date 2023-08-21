@@ -21,14 +21,20 @@
                     <h2 class="fs-11 fw-bold text-center mb-4">會員登入</h2>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <form action="index.html">
+                    <form action="index.html" class="needs-validation" novalidate>
                         <div class="mb-4">
                           <label for="account" class="form-label mb-2">帳號</label>
-                          <input type="text" name="account" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="account" aria-describedby="accountHelp" placeholder="請輸入帳號">
+                          <input type="text" name="account" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="account" aria-describedby="accountHelp" placeholder="請輸入帳號" required>
+                          <div class="invalid-feedback">
+                            請輸入帳號
+                          </div>
                         </div>
                         <div class="mb-4">
                             <label for="code" class="form-label mb-2">密碼</label>
-                            <input type="text" name="code" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="code" aria-describedby="codeHelp" placeholder="請輸入密碼">
+                            <input type="text" name="code" class="form-control border-2 border-primary fs-12 py-2 ps-3" id="code" aria-describedby="codeHelp" placeholder="請輸入密碼" required>
+                            <div class="invalid-feedback">
+                              請輸入密碼
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary py-2 submitHtml d-block w-100 mb-2 mx-lg-auto">登入 <span class="icofont-rounded-double-right"></span></button>
                       </form>
@@ -42,5 +48,6 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script type="module" src="../assets/js/header.js"></script>
+    <script type="module" src="../assets/js/login.js"></script>
   </body>
 </html>
