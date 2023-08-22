@@ -123,20 +123,20 @@
             animation-name: rotate-2deg;
             animation-duration: 1s;
             animation-fill-mode: forwards;
-            animation-iteration-count: 3000000;
+            animation-iteration-count: infinite; //無限循環
         }
         li:nth-child(3){
             //transform: rotate(2deg);
             animation-name: rotate2deg;
             animation-duration: 1s;
             animation-fill-mode: forwards;
-            animation-iteration-count: 3000000;
+            animation-iteration-count: infinite;
         }
         li:nth-child(1){
             animation-name: rotate0deg;
             animation-duration: 1s;
             animation-fill-mode: forwards;
-            animation-iteration-count: 3000000;
+            animation-iteration-count: infinite;
         }
     }
     .promote{
